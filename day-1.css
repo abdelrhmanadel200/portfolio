@@ -106,7 +106,7 @@
     background-color: rgb(172, 160, 180);
     color: rgb(204, 13, 140);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     max-width: 55%;
     text-align: center;
@@ -177,7 +177,11 @@
     bottom: 0;
     width: 100%;
   }
-  
+  input,textarea{
+    background-color: rgb(194, 164, 206);
+    border: 2px;
+    border-radius: 5px;
+  }
 
   
   @keyframes example {
