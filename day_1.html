@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Abdelrhman</title>
+  <link id="logo" rel="icon" type="image/x-icon" href="abdelrhman.jpg">
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="day-1.css">
+
+</head>
+
+<body id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <button id="button1" onclick="darkmode()">Color</button>
+      </ul>
+    </nav>
+    <h1>Abdelrhman's portfolio</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p id="ww">Hello! My name is Abdelrhman Adel and I am a Frontend developer. I created this website to showcase my
+        work and provide information about my services.<br>
+        I have a passion for creaating movie websites and I enjoy watching them.</p>
+    </section>
+
+    <section>
+      <h2>My Services</h2>
+      <ul class="parent">
+        <a href="https://en.wikipedia.org/wiki/Front_end" target="_blank">
+          <li class="services">frontend</li>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Back_end" target="_blank">
+          <li class="services">backend</li>
+        </a>
+        <a href="https://en.wikipedia.org/w/index.php?search=ui+ux&title=Special%3ASearch&ns0=1" target="_blank">
+          <li class="services">ui/ux</li>
+        </a>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Skills</h2>
+      <ul class="parent2">
+        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><li class="services2">c</li></a>
+        <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">
+          <li class="services2">c++</li>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+          <li class="services2">python</li>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+          <li class="services2">HTML</li>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+          <li class="services2">Css</li>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+          <li class="services2">Javascript</li>
+        </a>
+        <a href="https://en.wikipedia.org/w/index.php?search=ui+ux&title=Special%3ASearch&ns0=1" target="_blank">
+          <li class="services2">ui/ux</li>
+        </a>
+
+      </ul>
+      
+    </section>
+
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      
+      <img class="image" src="project1.jpeg" alt="Project 1" width="200" height="150">
+      <img class="image" src="project1.jpeg" alt="Project 1" width="200" height="150">
+      <img class="image" src="project1.jpeg" alt="Project 1" width="200" height="150">
+      <img class="image" src="project1.jpeg" alt="Project 1" width="200" height="150">
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form name="myform" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button class="button" type="submit">Send</button>
+      </form>
+    </section>
+    <div class="chat-container">
+      <div class="chat-header">
+          <h2>Chatbot</h2>
+      </div>
+      <div class="chat-messages">
+          <div class="message" id="bot-message">
+              <p>Hello! I'm your chatbot. How can I assist you today?</p>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message...">
+          <button id="send-button">Send</button>
+      </div>
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Abdelrhman. All rights reserved.</p>
+  </footer>
+  
+</body>
+<script src="day-1.js"></script>
+</html>

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  nav li {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  main {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.25fr;
+  }
+  
+  section {
+    background-color: rgb(216, 202, 223);
+    padding: 20px;
+    margin: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  
+  h2 {
+    background-color: rgb(128, 83, 146);
+    padding: 10px;
+    border: 2px solid rgb(128, 20, 110);
+    border-style: outset;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #ww {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(128, 20, 110);
+    border-style: outset;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  #contact {
+    margin-top: 2px;
+    margin-bottom: px;
+    height: 250px;
+  }
+  
+  #contact label {
+    padding: 10px;
+  }
+  
+  .services {
+    background-color: rgb(172, 160, 180);
+    color: rgb(204, 13, 140);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 40px;
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+   
+  }
+  .services2 {
+    background-color: rgb(172, 160, 180);
+    color: rgb(204, 13, 140);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 55%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .services2:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .services2:active{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .services:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .services:active{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .parent{
+    display: grid;
+    
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 60px;
+      align-items: center;
+  }
+  .parent2{
+    display: grid;
+    
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 60px;
+      align-items: center;
+  }
+  
+  .image {
+    margin-left: 5%;
+    border: 5px solid violet;
+    border-radius: 10px;
+    border-style: outset;
+    
+  }
+  .image:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .image:active{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer {
+    background-color: rgb(128, 83, 146);
+    padding: 0px;
+    border: 2px solid rgb(128, 20, 110);
+    border-style: outset;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  input,textarea{
+    background-color: rgb(255, 255, 255);
+    border: 2px;
+    border-radius: 5px;
+  }
+  .button{
+    width: 10%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #button:hover {
+    background-color: #3e8e41;
+}
+  #button1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    /* width: 1px; */
+    margin-left: 40%;
+  }
+  @keyframes example {
+    from {color:rgb(255, 255, 255);}
+    to {color: rgb(132, 88, 182);}
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    padding: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.chat-input {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ccc;
+}
+
+#user-input {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+#send-button {
+    width: 23%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #3e8e41;
+}
+
