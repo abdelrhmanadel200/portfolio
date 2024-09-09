@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   header {
     background-color: #333;
     color: #fff;
@@ -25,7 +25,7 @@
     animation-duration: 4s;
     animation-delay: 0.5s;
   }
-  
+
   nav ul {
     list-style-type: none;
     display: flex;
@@ -33,27 +33,27 @@
     margin: 0px;
     padding: 0px;
   }
-  
+
   nav li {
     margin: 10px;
     padding: 10px;
   }
-  
+
   nav a {
     color: #fff;
     text-decoration: none;
   }
-  
+
   nav a:hover {
     color: #ccc;
   }
-  
+
   main {
     display: grid;
     justify-content: center;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.25fr;
   }
-  
+
   section {
     background-color: rgb(216, 202, 223);
     padding: 20px;
@@ -61,7 +61,7 @@
     max-width: 100%;
     border-radius: 20px;
   }
-  
+
   h2 {
     background-color: rgb(128, 83, 146);
     padding: 10px;
@@ -70,7 +70,7 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   #ww {
     text-align: center;
     padding: 20px;
@@ -79,17 +79,17 @@
     color: #000000;
     margin-bottom: 20px;
   }
-  
+
   #contact {
     margin-top: 2px;
     margin-bottom: px;
     height: 250px;
   }
-  
+
   #contact label {
     padding: 10px;
   }
-  
+
   .services {
     background-color: rgb(172, 160, 180);
     color: rgb(204, 13, 140);
@@ -101,7 +101,7 @@
     text-align: center;
     align-items: center;
     list-style-type: none;
-   
+
   }
   .services2 {
     background-color: rgb(172, 160, 180);
@@ -114,7 +114,7 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    
+
   }
   a {
     text-decoration: none;
@@ -138,7 +138,7 @@
   }
   .parent{
     display: grid;
-    
+
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 60px;
@@ -146,19 +146,19 @@
   }
   .parent2{
     display: grid;
-    
+
     text-align: center;
     grid-template-columns: repeat(7, 1fr);
       grid-template-rows: 60px;
       align-items: center;
   }
-  
+
   .image {
     margin-left: 5%;
     border: 5px solid violet;
     border-radius: 10px;
     border-style: outset;
-    
+
   }
   .image:hover{
     transform: scale(1.2);
@@ -168,7 +168,7 @@
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
   }
-  
+
   footer {
     background-color: rgb(128, 83, 146);
     padding: 0px;
@@ -272,3 +272,90 @@
     background-color: #3e8e41;
 }
 
+/* Weather Section Styles */
+#city {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#get-weather-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#get-weather-button:hover {
+    background-color: #218838;
+}
+
+#weather-info {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* Weather Section Styles */
+.weather-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#city {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#get-weather-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#get-weather-button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+.zxzx {
+    max-width: 50%;
+    margin-left: 25%;
+}
