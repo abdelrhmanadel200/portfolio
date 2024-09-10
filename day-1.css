@@ -1,86 +1,87 @@
+/* General Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  header {
+/* Header */
+header {
     background-color: #333;
     color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  h1{
+    flex-wrap: wrap;
+}
+
+/* Headings */
+h1 {
     animation-name: example;
     animation-duration: 4s;
     animation-delay: 0.5s;
-  }
+}
 
-  nav ul {
+/* Navigation */
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-  }
+    margin: 0;
+    padding: 0;
+}
 
-  nav li {
+nav li {
     margin: 10px;
     padding: 10px;
-  }
+}
 
-  nav a {
+nav a {
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     color: #ccc;
-  }
+}
 
-  main {
+/* Main Content */
+main {
     display: grid;
     justify-content: center;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.25fr;
-  }
+    gap: 20px;
+}
 
-  section {
+/* Section Styling */
+section {
     background-color: rgb(216, 202, 223);
     padding: 20px;
     margin: 30px;
-    max-width: 100%;
     border-radius: 20px;
-  }
+}
 
-  h2 {
+/* Headings in Section */
+h2 {
     background-color: rgb(128, 83, 146);
     padding: 10px;
     border: 2px solid rgb(128, 20, 110);
     border-style: outset;
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
-  #ww {
-    text-align: center;
-    padding: 20px;
-    border: 2px solid rgb(128, 20, 110);
-    border-style: outset;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-
-  #contact {
+/* Contact Form */
+#contact {
     margin: 20px auto;
     padding: 20px;
     max-width: 600px;
@@ -88,135 +89,64 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
-  }
+}
 
-  #contact label {
+#contact label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #333;
-  }
-  #contact input[type="text"],
+}
+
+#contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 /* Textarea Specific Styling */
 #contact textarea {
-  resize: vertical; /* Allows vertical resizing only */
-  min-height: 150px;
+    resize: vertical; /* Allows vertical resizing only */
+    min-height: 150px;
 }
 
-.portfolio{
-  height:50%;
-  
-  margin-bottom: 0;
-}
-#contact{
-  margin-top: 0;
+/* Portfolio */
+.portfolio {
+    height: 50%;
+    margin-bottom: 0;
 }
 
-  .services {
+/* Services */
+.services,
+.services2 {
     background-color: rgb(172, 160, 180);
     color: rgb(204, 13, 140);
     padding: 10px;
     border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.services {
     margin: 40px;
     margin-left: 10%;
     max-width: 80%;
-    text-align: center;
-    align-items: center;
-    list-style-type: none;
+}
 
-  }
-  .services2 {
-    background-color: rgb(172, 160, 180);
-    color: rgb(204, 13, 140);
-    padding: 10px;
-    border-radius: 20px;
+.services2 {
     margin: 10px;
     max-width: 55%;
-    text-align: center;
-    align-items: center;
     justify-content: space-between;
-    list-style-type: none;
+}
 
-  }
-  a {
-    text-decoration: none;
-  }
-
-  .services2:hover{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .services2:active{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .services:hover{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .services:active{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .parent{
-    display: grid;
-
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 60px;
-      align-items: center;
-  }
-  .parent2{
-    display: grid;
-
-    text-align: center;
-    grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: 60px;
-      align-items: center;
-  }
-
-  .image {
-    margin-left: 5%;
-    border: 5px solid violet;
-    border-radius: 10px;
-    border-style: outset;
-
-  }
-  .image:hover{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .image:active{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-
-  footer {
-    background-color: rgb(128, 83, 146);
-    padding: 0px;
-    border: 2px solid rgb(128, 20, 110);
-    border-style: outset;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-  }
-  input,textarea{
-    background-color: rgb(255, 255, 255);
-    border: 2px;
-    border-radius: 5px;
-  }
-  .button {
+/* Buttons */
+.button {
     display: inline-block;
     width: auto;
     padding: 10px 20px;
@@ -227,28 +157,26 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #45a049; /* Darker shade for hover effect */
-  }
-  #button1{
+}
+
+#button1 {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
-    /* width: 1px; */
     margin-left: 40%;
-  }
-  @keyframes example {
-    from {color:rgb(255, 255, 255);}
-    to {color: rgb(132, 88, 182);}
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
+/* Animation */
+@keyframes example {
+    from { color: rgb(255, 255, 255); }
+    to { color: rgb(132, 88, 182); }
+}
+
+/* Chat Container */
 .chat-container {
     max-width: 400px;
     margin: 40px auto;
@@ -308,36 +236,7 @@
     background-color: #3e8e41;
 }
 
-/* Weather Section Styles */
-#city {
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#get-weather-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#get-weather-button:hover {
-    background-color: #218838;
-}
-
-#weather-info {
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-}
-
-/* Weather Section Styles */
+/* Weather Section */
 .weather-container {
     display: flex;
     align-items: center;
@@ -391,7 +290,66 @@
     color: red;
     font-weight: bold;
 }
-.zxzx {
-    max-width: 50%;
-    margin-left: 25%;
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .services,
+    .services2 {
+        max-width: 70%;
+    }
+
+    .parent,
+    .parent2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services,
+    .services2 {
+        max-width: 90%;
+    }
+
+    .parent,
+    .parent2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #button1 {
+        margin-left: 0;
+    }
+
+    .chat-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .portfolio {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #contact {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+        font-size: 14px;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
 }
