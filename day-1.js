@@ -13,6 +13,7 @@ const darkmode = () => {
   document.body.style.backgroundColor = randomColor;
   document.getElementById('button1').style.backgroundColor = randomColor;
 };
+document.getElementById('button1').addEventListener('click', darkmode);
 
 // Weather API setup
 const API_KEY = 'c50cfa3c829efcd1294a3f02ca1b0983'; // Replace with your actual API key
