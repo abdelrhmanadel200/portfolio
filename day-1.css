@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
 
+
   body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
@@ -15,11 +16,12 @@
   header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    flex-direction: column;
   }
   h1{
     animation-name: example;
@@ -36,7 +38,7 @@
   }
 
   nav li {
-    margin: 10px;
+    margin: 0.5em;
     padding: 10px;
   }
 
@@ -52,15 +54,17 @@
   main {
     display: grid;
     justify-content: center;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.25fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr 0.5fr 0.25fr;
   }
 
   section {
     background-color: rgb(216, 202, 223);
     padding: 20px;
-    margin: 30px;
+    margin: 10px;
     max-width: 100%;
+    /* min-width: 90%; */
     border-radius: 20px;
+    flex-wrap: wrap;    
   }
 
   h2 {
@@ -116,12 +120,11 @@
 }
 
 .portfolio{
-  height:50%;
-  
-  margin-bottom: 0;
+  height:auto;
 }
 #contact{
   margin-top: 0;
+  width: 80%;
 }
 
   .services {
@@ -172,9 +175,8 @@
   }
   .parent{
     display: grid;
-
     text-align: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       grid-template-rows: 60px;
       align-items: center;
   }
@@ -182,7 +184,7 @@
     display: grid;
 
     text-align: center;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-template-rows: 60px;
       align-items: center;
   }
@@ -253,6 +255,7 @@
 .chat-container {
     max-width: 400px;
     margin: 40px auto;
+    margin-bottom: 0;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -340,52 +343,52 @@
 
 /* Weather Section Styles */
 .weather-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #city {
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
 }
 
 #get-weather-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #get-weather-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .weather-info {
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-    display: flex;
-    align-items: center;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
 }
 
 .weather-details {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .weather-icon {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .error {
@@ -394,5 +397,6 @@
 }
 .zxzx {
     max-width: 50%;
-    margin-left: 25%;
+margin-left: 20%;
+    min-width: 60%;
 }
